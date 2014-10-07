@@ -16,7 +16,17 @@ namespace Alarm
             this.alarmTime = alarmTime;
         }
 
+        public void setTime(DateTime time)
+        {
+            if (alarmTime != time)
+            {
+                alarmTime = time;
+                OnTimeChanged();
+            }
+        }
+
         public delegate void AlarmTimeHandler();
+
         public event AlarmTimeHandler Ringing;
 
         protected virtual void OnTimeChanged()
