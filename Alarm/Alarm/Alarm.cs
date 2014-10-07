@@ -16,7 +16,12 @@ namespace Alarm
             this.alarmTime = alarmTime;
         }
 
-        //Event til at styre hvornår den er færdig
+        public delegate void AlarmTimeHandler();
+        public event AlarmTimeHandler Ringing;
 
+        protected virtual void OnTimeChanged()
+        {
+
+        }
     }
 }
