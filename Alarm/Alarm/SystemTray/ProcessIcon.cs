@@ -15,6 +15,11 @@ namespace Alarm
             this.notifyIcon = new NotifyIcon();
         }
 
+        public void Display()
+        {
+
+        }
+
         public void Dispose()
         {
             throw new NotImplementedException();

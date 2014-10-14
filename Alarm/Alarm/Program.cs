@@ -11,6 +11,10 @@ namespace Alarm
     {
         static void Main(string[] args)
         {
+            using (ProcessIcon processIcon = new ProcessIcon())
+            {
+                processIcon.Display();
+            }
             UI ui = new UI();
         }
     }
