@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Alarm.SystemTray;
+using System.Windows.Forms;
 
 namespace Alarm
 {
@@ -12,11 +13,14 @@ namespace Alarm
     {
         static void Main(string[] args)
         {
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+
             using (ProcessIcon processIcon = new ProcessIcon())
             {
                 processIcon.Display();
                 UI ui = new UI();
-                Console.ReadKey();
+                //Application.Run();
             }
         }
     }
