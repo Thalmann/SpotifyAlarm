@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using Alarm;
 
-namespace SystemTrayApp
+namespace Alarm.SystemTray
 {
     /// <summary>
     /// 
