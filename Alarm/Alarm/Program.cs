@@ -20,7 +20,7 @@ namespace Alarm
             {
                 processIcon.Display();
                 UI ui = new UI();
-                //Application.Run();
+                Application.Run();
             }
         }
     }
