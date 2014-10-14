@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Drawing;
-using Alarm;
+using MusicAlarm;
 
-namespace Alarm.SystemTray
+namespace MusicAlarm.SystemTray
 {
     /// <summary>
     /// 

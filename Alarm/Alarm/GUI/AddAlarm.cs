@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Alarm.GUI
+namespace MusicAlarm.GUI
 {
     public partial class AddAlarm : UserControl
     {

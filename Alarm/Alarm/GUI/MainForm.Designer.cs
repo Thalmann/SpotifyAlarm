@@ -1,4 +1,4 @@
-﻿namespace Alarm.GUI
+﻿namespace MusicAlarm.GUI
 {
     partial class MainForm
     {
@@ -31,7 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.addAlarmControl = new Alarm.GUI.AddAlarm();
+            this.addAlarmControl = new MusicAlarm.GUI.AddAlarm();
             this.listBox = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();

@@ -1,4 +1,4 @@
-﻿namespace Alarm.GUI
+﻿namespace MusicAlarm.GUI
 {
     partial class AddAlarm
     {

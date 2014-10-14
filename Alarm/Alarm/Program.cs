@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Alarm.SystemTray;
+using MusicAlarm.SystemTray;
 using System.Windows.Forms;
 
-namespace Alarm
+namespace MusicAlarm
 {
     class Program
     {

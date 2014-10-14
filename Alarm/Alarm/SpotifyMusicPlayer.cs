@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using SpotifyAPI.SpotifyLocalAPI;
 
-namespace Alarm
+namespace MusicAlarm
 {
     public class SpotifyMusicPlayer : IMusicProvider
     {
