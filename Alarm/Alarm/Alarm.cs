@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace MusicAlarm
 {
@@ -10,28 +11,20 @@ namespace MusicAlarm
     {
         private DateTime alarmTime;
         private IMusicProvider musicProvider;
+        private Timer timer;
         public Alarm(IMusicProvider musicProvider, DateTime alarmTime)
         {
             this.musicProvider = musicProvider;
             this.alarmTime = alarmTime;
+            timer = new Timer((alarmTime - DateTime.Now).Milliseconds);
+            timer.Start();
+            timer.Elapsed += timer_Elapsed;
         }
 
-        public void setTime(DateTime time)
+        void timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (alarmTime != time)
-            {
-                alarmTime = time;
-                OnTimeChanged();
-            }
+            this.musicProvider.Play();
         }
 
-        public delegate void AlarmTimeHandler();
-
-        public event AlarmTimeHandler Ringing;
-
-        protected virtual void OnTimeChanged()
-        {
-
-        }
     }
 }
