@@ -28,7 +28,8 @@ namespace MusicAlarm.SystemTray
         {
             if (e.Button == MouseButtons.Left)
             {
-                //Show form
+                MusicAlarm.GUI.MainForm form = new GUI.MainForm();
+                form.Show();
             }
         }
 
