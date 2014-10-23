@@ -32,16 +32,19 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBoxHour = new System.Windows.Forms.TextBox();
             this.textBoxMinute = new System.Windows.Forms.TextBox();
+            this.listBox = new System.Windows.Forms.ListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // addAlarmButton
             // 
-            this.addAlarmButton.Location = new System.Drawing.Point(271, 2);
+            this.addAlarmButton.Location = new System.Drawing.Point(399, 2);
             this.addAlarmButton.Name = "addAlarmButton";
             this.addAlarmButton.Size = new System.Drawing.Size(75, 23);
             this.addAlarmButton.TabIndex = 0;
             this.addAlarmButton.Text = "Add";
             this.addAlarmButton.UseVisualStyleBackColor = true;
+            this.addAlarmButton.Click += new System.EventHandler(this.addAlarmButton_Click);
             // 
             // dateTimePicker1
             // 
@@ -66,16 +69,34 @@
             this.textBoxMinute.TabIndex = 3;
             this.textBoxMinute.Text = "00";
             // 
+            // listBox
+            // 
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Location = new System.Drawing.Point(1, 31);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(473, 160);
+            this.listBox.TabIndex = 4;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(272, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
+            // 
             // AddAlarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listBox);
             this.Controls.Add(this.textBoxMinute);
             this.Controls.Add(this.textBoxHour);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.addAlarmButton);
             this.Name = "AddAlarm";
-            this.Size = new System.Drawing.Size(351, 28);
+            this.Size = new System.Drawing.Size(483, 198);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +108,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBoxHour;
         private System.Windows.Forms.TextBox textBoxMinute;
+        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

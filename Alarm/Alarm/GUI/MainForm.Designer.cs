@@ -30,9 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listBox = new System.Windows.Forms.ListBox();
-            this.addAlarmControl = new MusicAlarm.GUI.AddAlarm();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.addAlarmControl = new MusicAlarm.GUI.AddAlarm();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -45,35 +44,19 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(435, 270);
+            this.tabControl1.Size = new System.Drawing.Size(499, 307);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listBox);
             this.tabPage1.Controls.Add(this.addAlarmControl);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(427, 244);
+            this.tabPage1.Size = new System.Drawing.Size(491, 281);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // listBox
-            // 
-            this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(8, 65);
-            this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(352, 147);
-            this.listBox.TabIndex = 1;
-            // 
-            // addAlarmControl
-            // 
-            this.addAlarmControl.Location = new System.Drawing.Point(8, 22);
-            this.addAlarmControl.Name = "addAlarmControl";
-            this.addAlarmControl.Size = new System.Drawing.Size(352, 28);
-            this.addAlarmControl.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -85,11 +68,18 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // addAlarmControl
+            // 
+            this.addAlarmControl.Location = new System.Drawing.Point(8, 22);
+            this.addAlarmControl.Name = "addAlarmControl";
+            this.addAlarmControl.Size = new System.Drawing.Size(486, 204);
+            this.addAlarmControl.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 270);
+            this.ClientSize = new System.Drawing.Size(499, 307);
             this.Controls.Add(this.tabControl1);
             this.Name = "MainForm";
             this.Text = "MainForm";
@@ -104,7 +94,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ListBox listBox;
         private AddAlarm addAlarmControl;
     }
 }
